@@ -19,14 +19,15 @@ include /usr/share/dpkg/default.mk
 
 # main packaging script based on dh7 syntax
 %:
-	dh $@ 
-
-# dh_make generated override targets
-# This is example for Cmake (See https://bugs.debian.org/641051 )
-#override_dh_auto_configure:
-#	dh_auto_configure -- \
-#	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
-
-
-
-
+	dh $@  --with autotools-dev
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf lib/.libs src/.libs
+override_dh_autotools-dev_updateconfig:
+	./autogen.sh
+override_dh_auto_configure:
+	./configure --enable-shared
+override_dh_auto_build:
+	dh_auto_build --parallel -- SHELL=/bin/bash LDFLAGS='$(LDFLAGS)'
+override_dh_auto_install:
+	dh_auto_install -- SHELL=/bin/bash
