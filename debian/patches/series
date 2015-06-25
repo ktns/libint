@@ -1,1 +1,2 @@
-0001-Don-t-remove-header-files.patch
+0001-Dont-remove-header-files.patch
+0002-distclean-Cleanup-files-generated-by-autogen.sh.patch
