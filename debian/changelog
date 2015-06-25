@@ -1,0 +1,5 @@
+libint-github (2.1.0~beta2-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Katsuhiko Nishimra <ktns.87@gmail.com>  Thu, 25 Jun 2015 13:50:03 +0900
