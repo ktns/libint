@@ -8,14 +8,16 @@ Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: git://anonscm.debian.org/collab-maint/libint.git
 #Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/libint.git;a=summary
 
-Package: libint-dev
+Package: libint2-beta2-dev
+Provides: libint-dev
+Conflicts: libint-dev
 Section: libdevel
 Architecture: any
-Depends: libintBROKEN (= ${binary:Version}), ${misc:Depends}
+Depends: libint2-beta2 (= ${binary:Version}), ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
-Package: libintBROKEN
+Package: libint2-beta2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>
