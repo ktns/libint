@@ -3,7 +3,7 @@ Priority: optional
 Maintainer: Katsuhiko Nishimra <ktns.87@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
-Section: libs
+Section: science
 Homepage: https://github.com/evaleev/libint
 X-Vcs-Git-Upstream: git://github.com/evaleev/libint
 
@@ -13,11 +13,15 @@ Conflicts: libint-dev
 Section: libdevel
 Architecture: any
 Depends: libint2-beta2 (= ${binary:Version}), ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Libint computes molecular integrals 
+ Libint is a software stack for
+ computing integrals used in
+ molecular quantum mechanics.
 
 Package: libint2-beta2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Libint computes molecular integrals
+ Libint is a software stack for
+ computing integrals used in
+ molecular quantum mechanics.
