@@ -4,9 +4,8 @@ Maintainer: Katsuhiko Nishimra <ktns.87@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/libint.git
-#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/libint.git;a=summary
+Homepage: https://github.com/evaleev/libint
+X-Vcs-Git-Upstream: git://github.com/evaleev/libint
 
 Package: libint2-beta2-dev
 Provides: libint-dev
