@@ -16,6 +16,7 @@ include /usr/share/dpkg/default.mk
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
+export DEB_CXXFLAGS_MAINT_APPEND= -std=c++11
 
 # main packaging script based on dh7 syntax
 %:
