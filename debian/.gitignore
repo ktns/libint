@@ -1,0 +1,4 @@
+/libint-dev/
+/libint2.1/
+/tmp/
+*.debhelper.log
