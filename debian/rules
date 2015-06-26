@@ -27,7 +27,7 @@ override_dh_auto_clean:
 override_dh_autotools-dev_updateconfig:
 	./autogen.sh
 override_dh_auto_configure:
-	./configure --enable-shared
+	./configure --prefix=/usr --enable-shared
 override_dh_auto_build:
 	dh_auto_build --parallel -- SHELL=/bin/bash LDFLAGS='$(LDFLAGS)'
 override_dh_auto_install:
