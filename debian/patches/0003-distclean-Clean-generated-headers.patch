@@ -1,0 +1,23 @@
+From: Katsuhiko Nishimra <ktns.87@gmail.com>
+Date: Fri, 26 Jun 2015 21:36:39 +0900
+Subject: distclean: Clean generated headers
+
+---
+ Makefile | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 738ed19..d32ba7e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -93,7 +93,9 @@ distclean::
+ 	    (cd $${dir} && $(MAKE) $(DODEPENDOPT) distclean) || exit 1; \
+ 	  done
+ 	-rm -rf autom4te.cache config.status config.log conf*.file conf*.dir *.dSYM depcheck* libtool \
+-Makedirlist libint2.pc aclocal.m4 configure
++Makedirlist libint2.pc aclocal.m4 configure \
++include/libint2/basis.h include/libint2/cgshell_ordering.h include/libint2/config.h \
++include/libint2/libint2_iface.h include/libint2/libint2_params.h include/libint2/libint2_types.h
+ 
+ targetclean::
+ 	for dir in $(SUBDIRS); \
