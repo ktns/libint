@@ -2,8 +2,8 @@ Source: libint-github
 Priority: optional
 Maintainer: Katsuhiko Nishimra <ktns.87@gmail.com>
 Build-Depends: debhelper (>= 9), autoconf (>= 2.57), automake, autotools-dev,
-							 libboost1.57-dev | libboost1.55-dev | libboost-dev,
-							 libgmp-dev
+               quilt, libboost1.57-dev | libboost1.55-dev | libboost-dev,
+               libgmp-dev
 Standards-Version: 3.9.6
 Section: science
 Homepage: https://github.com/evaleev/libint
