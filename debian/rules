@@ -22,6 +22,7 @@ export DEB_CXXFLAGS_MAINT_APPEND= -std=c++11
 %:
 	dh $@  --with autotools-dev
 override_dh_auto_clean:
+	quilt push -a
 	dh_auto_clean
 	rm -rf lib/.libs src/.libs
 override_dh_autotools-dev_updateconfig:
