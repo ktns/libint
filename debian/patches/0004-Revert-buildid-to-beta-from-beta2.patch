@@ -1,0 +1,19 @@
+From: Katsuhiko Nishimra <ktns.87@gmail.com>
+Date: Sat, 27 Jun 2015 15:49:03 +0900
+Subject: Revert buildid to `beta' from `beta2'
+
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index 5d528cc..027dec8 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -1,5 +1,5 @@
+ define([libint_mmm_version],[2.1.0])
+-define([libint_buildid],[beta2])
++define([libint_buildid],[beta])
+ define([libint_so_version],[2:0:0])
+ 
+ dnl --------- Begin ---------

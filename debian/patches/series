@@ -1,3 +1,4 @@
 0001-Dont-remove-header-files.patch
 0002-distclean-Cleanup-files-generated-by-autogen.sh.patch
 0003-distclean-Clean-generated-headers.patch
+0004-Revert-buildid-to-beta-from-beta2.patch
