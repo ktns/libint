@@ -18,6 +18,8 @@ include /usr/share/dpkg/default.mk
 
 export DEB_CXXFLAGS_MAINT_APPEND= -std=c++11
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 # main packaging script based on dh7 syntax
 %:
 	dh $@  --with autotools-dev
@@ -28,7 +30,7 @@ override_dh_auto_clean:
 override_dh_autotools-dev_updateconfig:
 	./autogen.sh
 override_dh_auto_configure:
-	./configure --prefix=/usr --enable-shared
+	./configure --prefix=/usr --libdir=/usr/lib/$(DEB_HOST_MULTIARCH) --enable-shared
 override_dh_auto_build:
 	dh_auto_build --parallel -- SHELL=/bin/bash LDFLAGS='$(LDFLAGS)'
 override_dh_auto_install:
