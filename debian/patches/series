@@ -2,3 +2,4 @@
 0002-distclean-Cleanup-files-generated-by-autogen.sh.patch
 0003-distclean-Clean-generated-headers.patch
 0004-Revert-buildid-to-beta-from-beta2.patch
+0005-Append-LDFLAGS-on-LTLINK-command.patch

@@ -1,0 +1,21 @@
+From: Katsuhiko Nishimra <ktns.87@gmail.com>
+Date: Sat, 27 Jun 2015 16:58:05 +0900
+Subject: Append LDFLAGS on LTLINK command
+
+---
+ src/lib/libint/Makefile.library | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/lib/libint/Makefile.library b/src/lib/libint/Makefile.library
+index ea1db6f..776ae92 100644
+--- a/src/lib/libint/Makefile.library
++++ b/src/lib/libint/Makefile.library
+@@ -23,7 +23,7 @@ $(TOPDIR)/lib/$(NAME).a: $(LIBOBJ)
+ # this is how shared library is made
+ $(TOPDIR)/lib/$(NAME).la: $(LIBOBJ)
+ 	find . -name '*.$(OBJSUF)' -print > libobjlist
+-	$(LTLINK) $(CXX) -o $@ -objectlist libobjlist $(LTLINKLIBOPTS)
++	$(LTLINK) $(CXX) -o $@ -objectlist libobjlist $(LTLINKLIBOPTS) $(LDFLAGS)
+ 	-rm -f libobjlist
+ 
+ # the library is to be compiled using cxxgen
