@@ -12,9 +12,10 @@ Copyright: 2004-2015 Edward F. Valeev <libint@valeyev.edu>
 License: LGPL-2.0
 
 Files: include/libint2/any.h
-Copyright: Public Domain
+Copyright: Released to the public domain Andrew Tomazos
 Comment: taken from http://codereview.stackexchange.com/questions/20058/c11-any-class
 License: public-domain
+ The file have been put on the public domain by the author
 
 Files: include/libint2/cgshellinfo.h
        include/libint2/cgshell_ordering.h.in
